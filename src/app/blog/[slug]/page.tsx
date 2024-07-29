@@ -31,9 +31,9 @@ export default async function BlogPostPage({params} : Props) {
   const post = posts.find(( post ) => post.slug === params.slug)!;
 
   return (
-    <div>
-      <h1>{post.title}</h1>
-      <p>{post.content}</p>
+    <div className="md:m-6 md:p-6 m-4 p-4 min-h-full">
+      <h1 className="text-2xl md:text-4xl font-bold border-b w-3/4 tracking-wide md:w-2/4">{post.title}</h1>
+      <p className="mt-4 md:w-2/4">{post.content}</p>
     </div>
   )
 }
