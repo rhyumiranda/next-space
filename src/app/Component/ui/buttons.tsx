@@ -25,9 +25,9 @@ export function SignInButton() {
     );
   }
 
-  return <button onClick={() => signIn()} className="border px-4 py-2 text-sm font-semibold uppercase text-black bg-white">Sign In</button>;
+  return <button onClick={() => signIn()} className="border px-4 py-2 text-md uppercase text-black bg-white">Sign In</button>;
 }
 
 export function SignOutButton() {
-  return <button onClick={() => signOut()} className="border px-4 py-2 text-sm uppercase font-semibold">Sign Out</button>;
+  return <button onClick={() => signOut()} className="border px-4 py-2 text-md uppercase">Sign Out</button>;
 }
