@@ -5,7 +5,7 @@ import { SignInButton, SignOutButton } from "./ui/buttons";
 
 export default function NavMenu() {
   return (
-    <nav className="flex justify-between w-full border-b-2 border-zinc-400">
+    <nav className="flex justify-between w-full border-b border-gray-700">
       <Link href={"/"} className="flex justify-center items-center">
         <Image
           src={"/space.png"}
@@ -15,7 +15,7 @@ export default function NavMenu() {
           priority
         />
       </Link>
-      <ul className="flex items-center justify-end w-full gap-8 mr-16 uppercase transition-all ">
+      <ul className="md:flex items-center justify-end w-full gap-8 mr-16 uppercase transition-all hidden">
         <li>
           <Link href={"/about"} className="link-border text-sm md:text-lg">
             About
